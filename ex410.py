@@ -1,22 +1,28 @@
-consumo=int(input("Consumo(kWh):"))
-tipo=input("Tipo da instalação (R,C ou I):")
+energia_utilizada = float(input("Insira aqui a quantidade de energia utilizada (em kWh): "))
+tipo = input("Qual o tipo da instalação (residencial (R), industrial (I) ou comercial (C))?")
+
 if tipo == "R":
-    if consumo <= 500:
-        preço = 0.40
+    if energia_utilizada <= 500:
+        preco = 0.40
     else:
-        preço = 0.65
-elif tipo == "I":
-    if consumo <= 5000:
-        preço = 0.55
-    else:
-        preço = 0.60
+        preco = 0.65
+        
 elif tipo == "C":
-    if consumo <=1000:
-        preço = 0.55
+    if energia_utilizada <=1000:
+        preco = 0.55
     else:
-        preço = 0.60
+        preco = 0.60
+        
+elif tipo == "I":
+    if energia_utilizada <= 5000:
+        preco = 0.55
+    else:
+        preco = 0.60
+
 else:
     preço = 0
-    print("Erro ! Tipo de instalação desconhecido!")
-custo = consumo * preço
-print("Valor a pagar: R$ %7.2f" % custo)
+    print("Isira um caractere válido!")
+    
+total = energia_utilizada * preco
+
+print("O total a pagar é R$ %6.2f." % (total))

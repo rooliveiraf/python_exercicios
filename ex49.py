@@ -1,9 +1,13 @@
-valor=float(input("Valor da casa:"))
-salário=float(input("Salário:"))
-anos=int(input("Anos para quitar:"))
+valor_casa = float(input("Valor do imóvel a ser comprado: "))
+salario = float(input("Salário do comprador: "))
+anos = float(input("Anos para quitar o imóvel: "))
+
 meses = anos * 12
-prestacao = valor / meses
-if prestacao > salário * 0.3:
-    print("Negado")
+
+prestacao = float((valor_casa / meses))
+
+if prestacao > (0.3 * salario):
+    print("Empréstimo negado! Risco de inadimplência dado a relação prestação/salário.")
+    
 else:
-    print("Prestação: R$ %9.2f Empréstimo Concedido" % prestacao)
+    print("Empréstimo concedido! O valor mensal da parcela é de R$ %6.2f." % (prestacao))
