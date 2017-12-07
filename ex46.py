@@ -1,6 +1,8 @@
-distância=float(input("Distância almejada (km):"))
-if distância <= 200:
-    passagem = 0.5 * distância
+distancia = float(input("Insira aqui uma distância a ser percorrida em km: "))
+
+if distancia <= 200:
+    valor_passagem = distancia * 0.5
+    print("O valor total de sua passagem é de R$ %5.2f." % (valor_passagem))
 else:
-    passagem = 0.45 * distância
-print("Preço da passagem: R$ %7.2f" % passagem)
+    valor_passagem = distancia * 0.45
+    print("O valor total de sua passagem é de R$ %5.2f." % (valor_passagem))

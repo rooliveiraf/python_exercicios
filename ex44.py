@@ -1,6 +1,15 @@
-salário = float(input("Salário:"))
-pc_aumento = 0.15
-if salário > 125015 / 100:
-    pc_aumento = 10 / 100
-aumento = salário * pc_aumento
-print("Aumento: R$ %7.2f" % aumento)
+salario = float(input("Insira aqui o salário a receber o aumento (R$): "))
+
+if salario > 1250:
+    aumento = salario * 0.15
+    total = salario + aumento
+
+    print("O aumento do seu salário será de R$ %5.2f." % (aumento))
+    print("O valor final do seu salário será de R$ %5.2f." % (total))
+
+if salario <= 1250:
+    aumento = salario * 0.15
+    total = salario + aumento
+
+    print("O aumento do seu salário será de R$ %5.2f." % (aumento))
+    print("O valor final do seu salário será de R$ %5.2f." % (total))

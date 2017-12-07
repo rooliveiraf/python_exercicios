@@ -1,15 +1,17 @@
-a=float(input("Primeiro número:"))
-b=float(input("Segundo número:"))
-operação=input("Operação (+,-,* ou /):")
-if operação == "+":
-    resultado = a + b
-elif operação == "-":
-    resultado = a - b
-elif operação == "*":
-    resultado = a * b
-elif operação == "/":
-    resultado = a / b
+a = int(input("Digite aqui número: "))
+b = int(input("Digite aqui outro número: "))
+operacao = input("Qual operação básica deseja realizar (+, -, *, /)? ")
+
+if operacao == "+":
+    calculo = a+b
+elif operacao == "-":
+    calculo = a-b
+elif operacao == "*":
+    calculo = a*b
+elif operacao == "/":
+    calculo = a/b
 else:
-    print("Operação inválida!")
+    print("Operação inválida")
     resultado = 0
-print("Resultado: ", resultado)
+
+print("O resultado da operação solicitada é %d." % (calculo))

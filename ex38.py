@@ -1,3 +1,5 @@
-m = float(input("Digite o valor em m: "))
-mm = m * 1000
-print("%d m são %d mm." % (m, mm))
+m = float(input("Escreva aqui um valor em metros: "))
+
+mm = m*1000
+
+print("%10.2fm são convertidos em %10.2fmm." % (m, mm))

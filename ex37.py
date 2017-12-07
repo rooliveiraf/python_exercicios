@@ -1,4 +1,7 @@
-a = int(input("Digite o primeiro número: "))
-b = int(input("Digite o segundo número: "))
+a = int(input("Insira aqui o primeiro número inteiro:"))
+b = int(input("Insira aqui o segundo número inteiro:"))
 
-print(a + b)
+soma = a + b
+
+
+print("A soma dos valores é %d." % (soma))
