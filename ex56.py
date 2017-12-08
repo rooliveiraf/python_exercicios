@@ -1,7 +1,5 @@
-n = int(input("Insira o número que deseja a tabuada:"))
+n = int(input("Tabuada de: "))
 x = 1
-while x <= 10:
-    print( "%d x %d = %d" % (n , x , x*n))
-    x=x+1
-
-    
+while x<= 10:
+    print("%dx%d = %d" % (x, n, n*x))
+    x = x + 1

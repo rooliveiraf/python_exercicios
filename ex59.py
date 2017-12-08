@@ -1,11 +1,11 @@
-dividendo = int(input("Dividendo:"))
-divisor = int(input("Divisor:"))
-quociente = 0
-x = dividendo
-while x >= divisor:
-    x = x - divisor
-    quociente = quociente + 1
-resto = x
-print("%d / %d = %d (quociente) %d (resto)" % (dividendo,divisor,quociente,resto))
+primeiro = int(input("Insira aqui o primeiro número: "))
+segundo = int(input("Insira aqui o segundo número: " ))
 
-    
+x = primeiro
+resultado = 0
+
+while x >= segundo:
+    x = x - segundo
+    resultado = resultado + 1
+resto = x
+print("%d / %d = %d . O resto é %d." % (primeiro, segundo, resultado, resto))

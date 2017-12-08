@@ -1,9 +1,8 @@
-n = int(input("Insira o número que deseja a tabuada:"))
-início = int(input("De:"))
-fim = int(input("Até:"))
-x = início
-while x <= fim:
-    print( "%d x %d = %d" % (n , x , x*n))
-    x=x+1
+inicio = int(input("Digite aqui o início da tabuada: "))
+fim = int(input("Digite aqui o fim da tabuada: "))
+n = int(input("Tabuada de: "))
 
-    
+x = inicio
+while x<= fim:
+    print("%dx%d = %d" % (x, n, n*x))
+    x = x + 1

@@ -1,11 +1,11 @@
-x = int(input("Digite o primeiro número:"))
-y = int(input("Digite o segundo número:"))
+primeiro = int(input("Insira aqui o primeiro número: "))
+segundo = int(input("Insira aqui o segundo número: " ))
 
-z = 1
-r = 0
-while z <= y:
-    r = r + x
-    z = z + 1
-print("%d x %d = %d" % (x,y,r))
+x = 1
+resultado = 0
 
-    
+while x <= segundo:
+    resultado = resultado + primeiro
+    x = x + 1
+
+print("%dx%d = %d" % (primeiro, segundo, resultado))
